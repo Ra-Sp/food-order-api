@@ -1,0 +1,99 @@
+{
+	"info": {
+		"name": "Food Order API",
+		"_postman_id": "366a7b24-53e7-4503-9631-dc7b254bb3e8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Insert Order",
+			"request": {
+				"method": "POST",
+				"header": [{"Content-Type": "application/json"}],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"John Doe\",\n  \"food\": \"Ice cream\",\n  \"quantity\": 2,\n  \"price\": 250\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/orders/6631ccf6988da6427956dcaf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"orders",
+						"6631ccf6988da6427956dcaf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"food\": \"Pop corn\",\n  \"quantity\": 1,\n  \"price\": 150\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/orders/6631ccb5988da6427956dcad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"orders",
+						"6631ccb5988da6427956dcad"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
